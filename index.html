@@ -7,24 +7,32 @@
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="A website to allow for easy interchange between hex and rgb color formats.">
-	<meta name="subject" content="A website to allow for easy interchange between hex and rgb color formats.">
-	<meta name="abstract" content="Change between hex and rgb color formats">
+	<meta name="description" content="A small web-app to easily switch between hexadecimal and RGB formats for color value.">
+	<meta name="subject" content="A website to switch between hex and rgb color formats.">
+	<meta name="abstract" content="Hexadecimal to rgb converter">
+
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@dherszenhaut" />
+	<meta name="twitter:creator" content="@dherszenhaut" />
+	<meta property="og:url" content="davidherszenhaut.github.io/hex2rgb" />
+	<meta property="og:title" content="hex2rgb" />
+	<meta property="og:description" content="A small web-app to easily switch between hexadecimal and RGB formats for color value." />
 
 	<title>hex2rgb</title>
 
 	<link rel="stylesheet" href="resources/css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
-	<script src="resources/js/script.js"></script>
+	<link rel="icon" type="image/png" href="resources/images/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="resources/images/favicon-16x16.png" sizes="16x16" />
 
 	<!--
 
 		TODO
 
-		- https://github.com/joshbuchea/HEAD
-		- add # to start of hex input
-		- split rgb input
+		- write script
+		- check responsiveness
 
 	-->
 
@@ -32,38 +40,50 @@
 
 <body>
 
-	<!-- HEADER -->
+	<!-- CONTAINER -->
 
-	<header>
+	<div class = "container">
 
-		<h1>hex 2 rgb</h1>
+		<!-- HEADER -->
 
-	</header>
+		<header>
 
-	<!-- FORM -->
+			<h1>hex 2 rgb</h1>
 
-	<div class = "content">
+		</header>
 
-		<form>
+		<!-- MAIN -->
 
-			<input type = "text" name = "hex" placeholder = "HEX" id = "hex"><br><br><br>
+		<main>
 
-			<input type = "text" name = "rgb" placeholder = "RGB" id = "rgb"><br><br><br>
+			<form>
 
-			<input type = "submit" value = "SUBMIT">
+				<input type = "text" name = "hexValue" placeholder = "HEX"><br><br>
 
-		</form>
+				<input type = "text" name = "rgbValue" placeholder = "RGB"><br><br>
+
+				<input type = "submit" name = "submit" value = ">">
+
+			</form>
+
+		</main>
+
+		<!-- FOOTER -->
+
+		<footer>
+
+			<a href = "https://github.com/davidherszenhaut" target = "_blank"><i class = "fa fa-github-square"></i></a> &nbsp; 
+
+			<a href = "https://www.facebook.com/david.herszenhaut" target = "_blank"><i class = "fa fa-facebook-square"></i></a> &nbsp; 
+
+			<a href = "https://twitter.com/dherszenhaut" target = "_blank"><i class = "fa fa-twitter-square"></i></a>
+
+		</footer>
 
 	</div>
 
-	<!-- FOOTER -->
-
-	<footer>
-
-		<a href = "https://github.com/davidherszenhaut" target = "_blank">GitHub</a>
-		<a href = "https://www.facebook.com/david.herszenhaut" target = "_blank">Facebook</a>
-		<a href = "https://twitter.com/dherszenhaut" target = "_blank">Twitter</a>
-
-	</footer>
+	<script src="resources/js/script.js"></script>
 
 </body>
+
+</html>

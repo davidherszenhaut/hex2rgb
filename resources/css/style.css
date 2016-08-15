@@ -3,77 +3,101 @@
 html, body {
 	padding: 0;
 	margin: 0;
+	font-family: "Slabo 27px";
 	text-align: center;
-	font-family: "Cormorant Garamond";
+	width: 100%;
+	font-size: 3vmin;
+	background-color: #363550;
+	color: #ffffff;
 }
 
-header, .content, footer {
-	padding: 5% 0 5% 0;
+/* CONTAINER */
+
+.container {
+	height: 100%;
 	width: 100%;
+	margin: 0;
+	padding: 0;
+	position: relative;
 }
 
 /* HEADER */
 
 header {
-	background-color: #a9a9a9;
-	color: #ffffff;
 }
 
-header h1 {
-	font-style: italic;
+/* MAIN */
+
+main {
+	padding: 5% 0;
 }
 
-/* CONTENT */
-
-.content {
-	background-color: #000000;
-	color: #ffffff;
-}
+/* FORM */
 
 form {
-	padding: 6%;
 }
 
-input[type = text] {
-	font-family: "Cormorant Garamond";
+input[type = "text"] {
+	font-family: "Slabo 27px";
+	font-size: 3vmin;
 	border: none;
-	background-color: #000000;
-	cursor: text;
-	font-size: x-large;
-}
-
-input[type = text]:focus {
-	outline: none;
 	border-bottom: 1px solid #ffffff;
+	background-color: inherit;
+}
+
+::-webkit-input-placeholder {
 	color: #ffffff;
 }
 
-input[type = submit] {
-	border: 1px solid #ffffff;
+:-ms-input-placeholder {
 	color: #ffffff;
-	background-color: #000000;
+}
+
+::-moz-placeholder {
+	color: #ffffff;
+	opacity: 1;
+}
+
+:-moz-placeholder {
+	color: #ffffff;
+	opacity: 1;
+}
+
+input {
+	color: #ffffff;
+}
+
+input[type = "text"]:focus {
+	outline: none;
+}
+
+input[type = "submit"] {
+	border-radius: 5px;
 	cursor: pointer;
-	text-decoration: none;
-	padding: 1%;
+	border: none;
+	background-color: #ffffff;
+	color: #363550;
+	font-size: 3vmin;
+	width: 10%;
 }
 
 /* FOOTER */
 
 footer {
-	background-color: #a9a9a9;
-	color: #ffffff;
 	position: fixed;
 	bottom: 0;
+	width: 100%;
+	padding-bottom: 3%;
 }
 
 footer > a {
-	text-decoration: none;
 	color: #ffffff;
+	text-decoration: none;
 	position: relative;
 }
 
 footer > a:hover {
-	color: #000000;
+	color: #ffffff;
 }
 
 footer > a:before {
@@ -83,7 +107,7 @@ footer > a:before {
 	height: 1px;
 	bottom: 0;
 	left: 0;
-	background-color: #000000;
+	background-color: #ffffff;
 	visibility: hidden;
 	-webkit-transform: scaleX(0);
 	transform: scaleX(0);
