@@ -4,85 +4,86 @@
 
 <head>
 
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="A small web-app to easily switch between hexadecimal and RGB formats for color value.">
-	<meta name="subject" content="A website to switch between hex and rgb color formats.">
-	<meta name="abstract" content="Hexadecimal to rgb converter">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:site" content="@dherszenhaut" />
-	<meta name="twitter:creator" content="@dherszenhaut" />
-	<meta property="og:url" content="davidherszenhaut.github.io/hex2rgb" />
-	<meta property="og:title" content="hex2rgb" />
-	<meta property="og:description" content="A small web-app to easily switch between hexadecimal and RGB formats for color value." />
+    <meta name="description" content="Hexadecimal to RGB color converter">
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="subject" content="Hexadecimal to RGB color converter">
 
-	<title>hex2rgb</title>
+    <title>hex2rgb</title>
 
-	<link rel="stylesheet" href="resources/css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
-	<link rel="icon" type="image/png" href="resources/images/favicon-32x32.png" sizes="32x32" />
-	<link rel="icon" type="image/png" href="resources/images/favicon-16x16.png" sizes="16x16" />
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
 
-	<!--
+    <script src="https://use.fontawesome.com/a657231cae.js"></script>
 
-		TODO
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
 
-		- write script
-		- check responsiveness
-
-	-->
 
 </head>
 
 <body>
 
-	<!-- CONTAINER -->
+    <!-- CONTAINER -->
 
-	<div class = "container">
+    <div class = "container">
 
-		<!-- HEADER -->
+    <!-- HEADER -->
 
-		<header>
+    <header>
 
-			<h1>hex 2 rgb</h1>
+        <h1>hex 2 rgb</h1>
 
-		</header>
+    </header>
 
-		<!-- MAIN -->
+    <!-- END of HEADER -->
 
-		<main>
+    <!-- MAIN -->
 
-			<form>
+    <main>
 
-				<input type = "text" name = "hexValue" placeholder = "HEX"><br><br>
+        <form onsubmit = "return false">
 
-				<input type = "text" name = "rgbValue" placeholder = "RGB"><br><br>
+            <input type = "text" name = "hexValue" placeholder = "HEX" id = "hexValue" maxlength = "7"><br><br>
 
-				<input type = "submit" name = "submit" value = ">">
+            <!-- <input type = "text" name = "rgbValue" placeholder = "RGB" id = "rgbValue"><br><br> -->
 
-			</form>
+            <p id = "rgbValue"></p>
 
-		</main>
+            <input type = "submit" name = "submit" value = ">" id = "submitButton" onclick = "convert();">
 
-		<!-- FOOTER -->
+        </form>
 
-		<footer>
+    </main>
 
-			<a href = "https://github.com/davidherszenhaut" target = "_blank"><i class = "fa fa-github-square"></i></a> &nbsp; 
+    <!-- END of MAIN -->
 
-			<a href = "https://www.facebook.com/david.herszenhaut" target = "_blank"><i class = "fa fa-facebook-square"></i></a> &nbsp; 
+    <!-- FOOTER -->
 
-			<a href = "https://twitter.com/dherszenhaut" target = "_blank"><i class = "fa fa-twitter-square"></i></a>
+    <footer>
 
-		</footer>
+        <a href = "https://davidherszenhaut.github.io" target = "_blank">&#5854;&#5819;</a> &nbsp;
 
-	</div>
+        <a href = "https://github.com/davidherszenhaut" target = "_blank"><i class = "fa fa-github-square"></i></a> &nbsp;
 
-	<script src="resources/js/script.js"></script>
+        <a href = "https://www.facebook.com/david.herszenhaut" target = "_blank"><i class = "fa fa-facebook-square"></i></a> &nbsp;
+
+        <a href = "https://twitter.com/dherszenhaut" target = "_blank"><i class = "fa fa-twitter-square"></i></a>
+
+    </footer>
+
+    <!-- END of FOOTER -->
+
+    </div>
+
+    <!-- END of CONTAINER -->
+
+    <script src="js/script.js"></script>
 
 </body>
 
