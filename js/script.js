@@ -18,7 +18,7 @@ function sanitizeInput(hex) {
     // make sure the value is long enough
 
     if (hex.length < 6) {
-        alert("Double check your hexadecimal value.");
+        alert("Double check your hexadecimal value.\n(Input not long enough.)");
     }
 
     hex = hex.toLowerCase();
@@ -28,7 +28,7 @@ function sanitizeInput(hex) {
     var goodInputs = "abcdef0123456789";
     for (i = 0; i < hex.length; i++) {
         if (goodInputs.indexOf(hex[i]) === -1) {
-            alert("Double check your hexadecimal value.");
+            alert("Double check your hexadecimal value.\n(Input does not have acceptable value(s).)");
         }
     }
 
