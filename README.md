@@ -1,4 +1,4 @@
 # hex2rgb
-A small website to easily switch from the hexadecimal color format to the RGB format.
+A tool to convert a color code from hexadecimal to RGB.
 
 [https://davidherszenhaut.github.io/hex2rgb/](https://davidherszenhaut.github.io/hex2rgb/)
