@@ -9,14 +9,12 @@ function convert() {
 
 function sanitizeInput(hex) {
 
-    // remove "#" if included by user
-
+    // remove prepended "#" if included by user
     if (hex.length === 7) {
         hex = hex.slice(1, 7);
     }
 
     // make sure the value is long enough
-
     if (hex.length < 6) {
         alert("Double check your hexadecimal value.\n(Input not long enough.)");
     }
@@ -24,7 +22,6 @@ function sanitizeInput(hex) {
     hex = hex.toLowerCase();
 
     // make sure all characters are acceptable values
-
     var goodInputs = "abcdef0123456789";
     for (i = 0; i < hex.length; i++) {
         if (goodInputs.indexOf(hex[i]) === -1) {
